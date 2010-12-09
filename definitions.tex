@@ -41,6 +41,8 @@
 \newcommand{\tvector}[1]{\boldsymbol{\vec{#1}}}
 \newcommand{\vx}{\tvector{x}}
 \newcommand{\vv}{\tvector{v}}
+\newcommand{\vxi}{\tvector{x}_i}
+\newcommand{\vvi}{\tvector{v}_i}
 \newcommand{\va}{\tvector{a}}
 \newcommand{\vI}{\tvector{I}}
 \newcommand{\vphi}{\tvector{\phi}}
@@ -69,3 +71,103 @@
 \newcommand{\gradient}{\mvector{\nabla}_{\!\!\mvomega}}
 \newcommand{\wk}{\ensuremath{w_k}}
 \newcommand{\nk}{\ensuremath{n_k}}
+
+
+
+%%MASERS
+\newcommand{\lsr}{LSR}
+\newcommand{\vsunlsr}{\ensuremath{v_\odot}}
+\newcommand{\vsunlsrx}{\ensuremath{v_{\odot,x}}}
+\newcommand{\vsunlsry}{\ensuremath{v_{\odot,y}}}
+\newcommand{\vsunlsrz}{\ensuremath{v_{\odot,z}}}
+\newcommand{\vlsr}{\ensuremath{v_{\mbox{\footnotesize \lsr}}}}
+\newcommand{\omegao}{\ensuremath{\Omega_0}}
+\newcommand{\Ro}{\ensuremath{R_0}}
+\newcommand{\zo}{\ensuremath{z_0}}
+\renewcommand{\vec}[1]{\mathbf{#1}} % boldface for vectors
+\newcommand{\mm}{\ensuremath{\vec{m}}}
+\newcommand{\zerovector}{\ensuremath{\vec{0}}}
+\newcommand{\masermean}{\ensuremath{\overline{\vv}}}
+\newcommand{\samplemean}{\ensuremath{\overline{\tvector{\mu}}}}
+\newcommand{\mmR}{\ensuremath{\overline{v}_R}}
+\newcommand{\mmphi}{\ensuremath{\overline{v}_\phi}}
+\newcommand{\mmz}{\ensuremath{\overline{v}_z}}
+\newcommand{\vvpec}{\ensuremath{\vv_{\mbox{{\footnotesize pec}}}}}
+\newcommand{\vpec}{\ensuremath{v_{\mbox{{\footnotesize pec}}}}}
+\newcommand{\vvmaser}{\ensuremath{\vv_{\mbox{{\footnotesize maser}}}}}
+\newcommand{\eeR}{\ensuremath{\vec{e}_{R}}}
+\newcommand{\eephi}{\ensuremath{\vec{e}_{\phi}}}
+\newcommand{\eez}{\ensuremath{\vec{e}_{z}}}
+\newcommand{\vvRi}{\ensuremath{\vpec_{R,i}}}
+\newcommand{\vvphii}{\ensuremath{\vpec_{\phi,i}}}
+\newcommand{\vvzi}{\ensuremath{\vpec_{z,i}}}
+\newcommand{\vvpeci}{\ensuremath{\vvpec_i}}
+\newcommand{\ten}[1]{\mathbf{#1}} % boldface for tensors
+\newcommand{\RR}{\ten{R}}
+\newcommand{\VV}{\ten{V}}
+\newcommand{\WW}{\ten{W}}
+\newcommand{\II}{\ten{I}}
+\newcommand{\TT}{\ten{T}}
+\newcommand{\AAA}{\ten{A}}
+\newcommand{\maserdisp}{\ensuremath{\mbox{\boldmath$\sigma$}}}
+\newcommand{\vgalx}{\ensuremath{\tilde{v}_x}}
+\newcommand{\vgaly}{\ensuremath{\tilde{v}_y}}
+\newcommand{\vgalz}{\ensuremath{\tilde{v}_z}}
+\newcommand{\normal}{\ensuremath{\mathcal{N}}}
+\newcommand{\wishart}{\ensuremath{\mathcal{W}}}
+\newcommand{\gammadist}{\ensuremath{\mathcal{G}}}
+\newcommand{\trace}{\mbox{Trace}}
+\newcommand{\T}{^{\scriptscriptstyle \top}}   % transpose
+\newcommand{\offsets}{\ensuremath{\Delta\vx_i, \Delta \vv_i}}
+\newcommand{\alloffsets}{\ensuremath{\{\offsets\}}}
+\newcommand{\pmsgra}{\ensuremath{\mu_{\mbox{{\footnotesize Sgr A$^*$}}}}}
+\newcommand{\vres}{\ensuremath{\tvector{v}_{\mbox{{\footnotesize res}}}}}
+\newcommand{\vresi}{\ensuremath{\tvector{v}_{\mbox{{\footnotesize res}}, i}}}
+\newcommand{\vgal}{\ensuremath{\tvector{v}_{\mbox{{\footnotesize Gal}}}}}
+\newcommand{\vgali}{\ensuremath{\tvector{v}_{\mbox{{\footnotesize Gal}}, i}}}
+
+\newcommand{\vlba}{VLBA}
+\newcommand{\vlbi}{VLBI}
+\newcommand{\vera}{VERA}
+\newcommand{\reid}{R09}
+\newcommand{\vc}{V_c}
+\newcommand{\mw}{MW}
+
+\newcommand{\ra}{\ensuremath{\alpha}}
+\newcommand{\dec}{\ensuremath{\delta}}
+\newcommand{\pmra}{\ensuremath{\mu_{\ra}}}
+\newcommand{\pmdec}{\ensuremath{\mu_{\dec}}}
+\newcommand{\eqx}{\ensuremath{x_{\textnormal{eq}}}}
+\newcommand{\eqy}{\ensuremath{y_{\textnormal{eq}}}}
+\newcommand{\eqz}{\ensuremath{z_{\textnormal{eq}}}}
+\newcommand{\gall}{{\it l}}
+\newcommand{\galb}{{\it b}}
+\newcommand{\pmll}{\ensuremath{\mu_\gall}}
+\newcommand{\pmbb}{\ensuremath{\mu_\galb}}
+\newcommand{\galx}{\ensuremath{x}}
+\newcommand{\galy}{\ensuremath{y}}
+\newcommand{\galz}{\ensuremath{z}}
+\newcommand{\galU}{\ensuremath{U}}
+\newcommand{\galV}{\ensuremath{V}}
+\newcommand{\galW}{\ensuremath{W}}
+\newcommand{\parallax}{\ensuremath{\varpi}}
+\newcommand{\radialdist}{\ensuremath{d}}
+\newcommand{\vrr}{\ensuremath{v_r}}
+\newcommand{\vll}{\ensuremath{v_\gall}}
+\newcommand{\vbb}{\ensuremath{v_\galb}}
+\newcommand{\vernal}{\ensuremath{\Upsilon}}
+\newcommand{\ngp}{\textnormal{NGP}}
+\newcommand{\ngpg}{\textnormal{G}}
+\newcommand{\ncp}{\textnormal{NCP}}
+\newcommand{\ncpp}{\textnormal{P}}
+\newcommand{\gc}{\textnormal{GC}}
+\newcommand{\gcc}{\textnormal{C}}
+\newcommand{\rangp}{\ensuremath{\ra_\ngp}}
+\newcommand{\decngp}{\ensuremath{\dec_\ngp}}
+\newcommand{\ragc}{\ensuremath{\ra_\gc}}
+\newcommand{\decgc}{\ensuremath{\dec_\gc}}
+\newcommand{\degree}{^{\circ}}
+\newcommand{\matrixleft}{\left[}
+\newcommand{\matrixright}{\right]}
+\newcommand{\arcsecs}{\textnormal{as}}
+
