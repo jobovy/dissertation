@@ -1,66 +1,70 @@
-%%
-%% Place here your \usepackage's. Some recommended packages are already included.
-%%
-
 % Graphics:
 \usepackage[final]{graphicx}
 %\usepackage{graphicx} % use this line instead of the above to suppress graphics in draft copies
 %\usepackage{graphpap} % \defines the \graphpaper command
 
+%%BIBSTYLE
+\usepackage{natbib}
+
 % Indent first line of each section:
 \usepackage{indentfirst}
 
-% Good AMS stuff:
-\usepackage{amsthm} % facilities for theorem-like environments
-\usepackage[tbtags]{amsmath} % a lot of good stuff!
-
 % Fonts and symbols:
-\usepackage{amsfonts}
-\usepackage{amssymb}
+\usepackage{amsfonts,amssymb,amsmath}
 
-% Formatting tools:
-%\usepackage{relsize} % relative font size selection, provides commands \textsmalle, \textlarger
-%\usepackage{xspace} % gentle spacing in macros, such as \newcommand{\acims}{\textsc{acim}s\xspace}
+%% others
+\usepackage{url}
+\usepackage{aas_macros}
+\usepackage{deluxetable}
 
-% Page formatting utility:
-%\usepackage{geometry}
+%%newcommands
+%%Latin
+\newcommand{\etal}{et~al.}
+\newcommand{\eg}{e.g.}
+\newcommand{\ie}{i.e.}
 
-%%
-%% Place here your \newcommand's and \renewcommand's. Some examples already included.
-%%
-\renewcommand{\le}{\leqslant}
-\renewcommand{\ge}{\geqslant}
-\renewcommand{\emptyset}{\ensuremath{\varnothing}}
-\newcommand{\ds}{\displaystyle}
-\newcommand{\R}{\ensuremath{\mathbb{R}}}
-\newcommand{\Q}{\ensuremath{\mathbb{Q}}}
-\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
-\newcommand{\N}{\ensuremath{\mathbb{N}}}
-\newcommand{\T}{\ensuremath{\mathbb{T}}}
-\newcommand{\eps}{\varepsilon}
-\newcommand{\closure}[1]{\ensuremath{\overline{#1}}}
-%\newcommand{\acim}{\textsc{acim}\xspace}
-%\newcommand{\acims}{\textsc{acim}s\xspace}
+%%Figures etc
+\newcommand{\figurenames}{\figurename s}
+\newcommand{\sectionname}{\S}
+\newcommand{\eqnname}{equation}
 
-%%
-%% Place here your \newtheorem's:
-%%
 
-%% Some examples commented out below. Create your own or use these...
-%%%%%%%%%\swapnumbers % this makes the numbers appear before the statement name.
-%\theoremstyle{plain}
-%\newtheorem{thm}{Theorem}[chapter]
-%\newtheorem{prop}[thm]{Proposition}
-%\newtheorem{lemma}[thm]{Lemma}
-%\newtheorem{cor}[thm]{Corollary}
-
-%\theoremstyle{definition}
-%\newtheorem{define}{Definition}[chapter]
-
-%\theoremstyle{remark}
-%\newtheorem*{rmk*}{Remark}
-%\newtheorem*{rmks*}{Remarks}
-
-%% This defines the "proo" environment, which is the same as proof, but
-%% with "Proof:" instead of "Proof.". I prefer the former.
-%\newenvironment{proo}{\begin{proof}[Proof:]}{\end{proof}}
+%%Solar system paper
+\newcommand{\unit}[1]{\mathrm{#1}}
+\newcommand{\AU}{\unit{AU}}
+\newcommand{\unitday}{\unit{d}}
+\newcommand{\yr}{\unit{yr}}
+\newcommand{\satellite}[1]{\textsl{#1}}
+\newcommand{\Gaia}{\satellite{Gaia}}
+\newcommand{\KS}{K--S}
+\newcommand{\tvector}[1]{\boldsymbol{\vec{#1}}}
+\newcommand{\vx}{\tvector{x}}
+\newcommand{\vv}{\tvector{v}}
+\newcommand{\va}{\tvector{a}}
+\newcommand{\vI}{\tvector{I}}
+\newcommand{\vphi}{\tvector{\phi}}
+\newcommand{\tuvector}[1]{\boldsymbol{\hat{#1}}}
+\newcommand{\rhat}{\tuvector{r}}
+\newcommand{\mvector}[1]{\boldsymbol{{#1}}}
+\newcommand{\mvtheta}{\mvector{\theta}}
+\newcommand{\mvthetae}{\mvector{\theta}_e}
+\newcommand{\mvthetaepsilon}{\mvector{\theta}_{\epsilon}}
+\newcommand{\mvomega}{\mvector{\omega}}
+\newcommand{\mvomegahatk}{\mvector{\hat{\omega}}_k}
+\newcommand{\mvDelta}{\mvector{\Delta}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\setofxv}{\{\vx_i,\vv_i\}}
+\newcommand{\setofrv}{\{r_i,v_{r,i}\}}
+\newcommand{\ueff}{u_{\mathrm{eff}}}
+\newcommand{\rperi}{r_{\mathrm{peri}}}
+\newcommand{\rap}{r_{\mathrm{ap}}}
+\renewcommand{\angle}{\phi_r}
+\newcommand{\anglei}{\phi_{r,i}}
+\newcommand{\ff}{f_{\mvtheta}}
+\newcommand{\fff}{\tilde{\ff}}
+\newcommand{\lnepsilon}{\ln{\epsilon}}
+\newcommand{\vperp}{j^2} % note strange definition
+\newcommand{\vperpi}{j_i^2}
+\newcommand{\gradient}{\mvector{\nabla}_{\!\!\mvomega}}
+\newcommand{\wk}{\ensuremath{w_k}}
+\newcommand{\nk}{\ensuremath{n_k}}
