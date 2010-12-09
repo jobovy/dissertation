@@ -167,10 +167,10 @@ u(r) = \frac{A\,r_0}{1-\alpha}\,\left[\frac{r}{r_0}\right]^{1-\alpha} \quad,
 \end{equation}
 where $j^2$ is the square of the magnitude of the planet's angular
 momentum per unit mass (or $L^2/m^2$), and $v_r$ is the radial
-component of the velocity (the component of $\vv$ parallel to $\vx$).
-The perihelion and aphelion distances
-$\rperi$ and $\rap$ are both found by setting $\epsilon=-\ueff$.  With
-these, we can define a radial asymmetry $e$
+component of the velocity (the component of $\vv$ parallel to
+$\vxsolar$).  The perihelion and aphelion distances $\rperi$ and
+$\rap$ are both found by setting $\epsilon=-\ueff$.  With these, we
+can define a radial asymmetry $e$
 \begin{equation}
 e \equiv \frac{\rap - \rperi}{\rap + \rperi} \quad,
 \end{equation}
@@ -288,9 +288,9 @@ of parameter space ought also to be excluded, although in practice
 this is not necessary for any of what follows.
 
 In preparation for what follows, we pre-compute all of the planet
-radial angles $\anglei$---given their positions $\vx_i$ and velocities
-$\vv_i$---as a function of the dynamical parameters.  These angles are
-shown in \figurename~\ref{fig:anglesPlanets}.
+radial angles $\anglei$---given their positions $\vxsolar_i$ and
+velocities $\vv_i$---as a function of the dynamical parameters.  These
+angles are shown in \figurename~\ref{fig:anglesPlanets}.
 
 \section{Frequentist orbital roulette}\label{sec:freq}
 
@@ -407,12 +407,12 @@ inferred from the data. Modeling the full phase-space distribution
 function permits simultaneous inference of missing data and properly
 marginalized probability distributions for dynamical parameters.
 
-Imagine that we have the three-vector positions $\vx_i$ and
+Imagine that we have the three-vector positions $\vxsolar_i$ and
 three-vector velocities $\vv_i$ at some time $t$ for $N$ planets $i$
 and a parameterized model for the gravitational acceleration law
-(force law per unit mass) $\va_{\mvomega}(\vx)$, a function of
-position $\vx$ and a list of parameters $\mvomega$.  We wish to obtain
-an estimate of the posterior probability distribution
+(force law per unit mass) $\va_{\mvomega}(\vxsolar)$, a function of
+position $\vxsolar$ and a list of parameters $\mvomega$.  We wish to
+obtain an estimate of the posterior probability distribution
 $p(\mvomega|\setofxv)$ for the parameters, where $\setofxv$ is the set
 of all planet positions and velocities.  We employ Bayes's theorem as
 follows:
@@ -445,7 +445,7 @@ function, which is proportional to the probability of observing a
 planet at a certain locus in phase space, is only a function of the
 integrals of the motion. We wish to assign zero probability to
 dynamical parameters that lead to any of the computed binding energies
-$\epsilon(\vx_i,\vv_i,\mvomega)$ being negative (because we defined
+$\epsilon(\vxsolar_i,\vv_i,\mvomega)$ being negative (because we defined
 $\epsilon > 0$ to be bound). We would also like to expresses our prior
 information or assumption that the system is long-lived (in units of
 the dynamical time), that it is non-resonant, and that we are not
@@ -461,9 +461,9 @@ in which there are no missing data, we can rewrite the likelihood as a
 function of the planets' radial coordinates, as the orientation of the
 orbit does not depend on the dynamical parameters:
 \begin{equation}
-p(\vx,\vv|\mvomega) \propto
-p(r,v_r,\vperp|\mvomega) =
-|J(\lnepsilon,e,\angle;r,v_r,\vperp)| \;p(\lnepsilon, e, \angle|\mvomega) \quad .
+p(\vxsolar,\vv|\mvomega) \propto p(r,v_r,\vperp|\mvomega) =
+|J(\lnepsilon,e,\angle;r,v_r,\vperp)| \;p(\lnepsilon, e,
+\angle|\mvomega) \quad .
 \end{equation}
 where, again, we have gone to $\lnepsilon$ because dimensioned
 parameters are usually best handled in the log, and
@@ -531,7 +531,7 @@ p(\mvomega | \setofxv) \propto
   \label{eqn:posterior}
 \end{equation}
 where each planet's value of $(\lnepsilon_i,e_i,\anglei)$ is a
-function of phase-space position $(\vx_i,\vv_i)$ and dynamical
+function of phase-space position $(\vxsolar_i,\vv_i)$ and dynamical
 parameters $\mvomega$, and the Jacobian is evaluated at each planet's
 value of $(\lnepsilon_i,e_i,\anglei)$.
 

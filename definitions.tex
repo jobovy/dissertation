@@ -23,12 +23,14 @@
 \newcommand{\etal}{et~al.}
 \newcommand{\eg}{e.g.}
 \newcommand{\ie}{i.e.}
+\newcommand{\Ie}{I.e.}
 
 %%Figures etc
 \newcommand{\figurenames}{\figurename s}
+\newcommand{\figuresname}{\figurename s}
 \newcommand{\sectionname}{\S}
 \newcommand{\eqnname}{equation}
-
+\newcommand{\eqnnumber}{equation}
 
 %%Solar system paper
 \newcommand{\unit}[1]{\mathrm{#1}}
@@ -39,7 +41,7 @@
 \newcommand{\Gaia}{\satellite{Gaia}}
 \newcommand{\KS}{K--S}
 \newcommand{\tvector}[1]{\boldsymbol{\vec{#1}}}
-\newcommand{\vx}{\tvector{x}}
+\newcommand{\vxsolar}{\tvector{x}}
 \newcommand{\vv}{\tvector{v}}
 \newcommand{\vxi}{\tvector{x}_i}
 \newcommand{\vvi}{\tvector{v}_i}
@@ -56,7 +58,7 @@
 \newcommand{\mvomegahatk}{\mvector{\hat{\omega}}_k}
 \newcommand{\mvDelta}{\mvector{\Delta}}
 \newcommand{\dd}{\mathrm{d}}
-\newcommand{\setofxv}{\{\vx_i,\vv_i\}}
+\newcommand{\setofxv}{\{\vxsolar_i,\vv_i\}}
 \newcommand{\setofrv}{\{r_i,v_{r,i}\}}
 \newcommand{\ueff}{u_{\mathrm{eff}}}
 \newcommand{\rperi}{r_{\mathrm{peri}}}
@@ -97,7 +99,7 @@
 \newcommand{\vvmaser}{\ensuremath{\vv_{\mbox{{\footnotesize maser}}}}}
 \newcommand{\eeR}{\ensuremath{\vec{e}_{R}}}
 \newcommand{\eephi}{\ensuremath{\vec{e}_{\phi}}}
-\newcommand{\eez}{\ensuremath{\vec{e}_{z}}}
+\newcommand{\eezmasers}{\ensuremath{\vec{e}_{z}}}
 \newcommand{\vvRi}{\ensuremath{\vpec_{R,i}}}
 \newcommand{\vvphii}{\ensuremath{\vpec_{\phi,i}}}
 \newcommand{\vvzi}{\ensuremath{\vpec_{z,i}}}
@@ -118,7 +120,7 @@
 \newcommand{\gammadist}{\ensuremath{\mathcal{G}}}
 \newcommand{\trace}{\mbox{Trace}}
 \newcommand{\T}{^{\scriptscriptstyle \top}}   % transpose
-\newcommand{\offsets}{\ensuremath{\Delta\vx_i, \Delta \vv_i}}
+\newcommand{\offsets}{\ensuremath{\Delta\vxsolar_i, \Delta \vv_i}}
 \newcommand{\alloffsets}{\ensuremath{\{\offsets\}}}
 \newcommand{\pmsgra}{\ensuremath{\mu_{\mbox{{\footnotesize Sgr A$^*$}}}}}
 \newcommand{\vres}{\ensuremath{\tvector{v}_{\mbox{{\footnotesize res}}}}}
@@ -175,6 +177,7 @@
 \newcommand{\apogee}{APOGEE}
 \newcommand{\hermes}{HERMES}
 \newcommand{\hipparcos}{\emph{Hipparcos}}
+\newcommand{\Hipparcos}{\hipparcos}
 \newcommand{\vR}{\ensuremath{v_R}}
 \newcommand{\vphihercules}{\ensuremath{v_{\phi}}}
 \newcommand{\vo}{\ensuremath{v_0}}
@@ -189,3 +192,82 @@
 \newcommand{\Rs}{\ensuremath{R_s}}
 \newcommand{\Rsigma}{\ensuremath{R_{\sigma}}}
 \newcommand{\Rolr}{\ensuremath{R_{\text{OLR}}}}
+
+%%MOVING GROUPS I
+\newcommand{\Tycho}{Tycho}
+\newcommand{\gcs}{\textit{Geneva-Copenhagen Survey}}
+\newcommand{\gcsabb}{GCS}
+\newcommand{\dirichlet}{{\cal D}}
+\renewcommand{\vec}[1]{\mathbf{#1}} % boldface for vectors
+\newcommand{\inv}{^{-1}}
+\newcommand{\rr}{\vec{r}}
+\newcommand{\bb}{\vec{b}}
+\newcommand{\cc}{\vec{c}}
+\newcommand{\ee}{\vec{\hat{e}}}
+\newcommand{\xx}{\vec{x}}
+\newcommand{\zz}{\vec{z}}
+\newcommand{\ww}{\vec{w}}
+\newcommand{\bij}{\bb_{ij}}
+\newcommand{\bbij}{\bij}
+\newcommand{\cci}{\cc_i}
+\newcommand{\eex}{\vec{\hat{x}}}
+\newcommand{\eey}{\vec{\hat{y}}}
+\newcommand{\eez}{\vec{\hat{z}}}
+\newcommand{\eer}{\vec{\hat{r}}}
+\newcommand{\mmj}{\mm_j}
+\newcommand{\mmk}{\mm_k}
+\newcommand{\mmrj}{m_{r,j}}
+\newcommand{\vvj}{\vv_j}
+\newcommand{\wwi}{\ww_i}
+\newcommand{\wwj}{\ww_j}
+\newcommand{\wwk}{\ww_k}
+\newcommand{\BB}{\ten{B}}
+\newcommand{\CC}{\ten{C}}
+\newcommand{\UU}{\ten{U}}
+\newcommand{\QQ}{\ten{Q}}
+\renewcommand{\SS}{\ten{S}}
+\newcommand{\AAAi}{\AAA_i}
+\newcommand{\PP}{\mbox{\bf P}}
+\newcommand{\BBij}{\BB_{ij}}
+\newcommand{\CCi}{\CC_i}
+\newcommand{\UUi}{\UU_i}
+\newcommand{\QQi}{\QQ_i}
+\newcommand{\radialproj}{\RR_r}
+\newcommand{\tangproj}{\RR_t}
+\newcommand{\RRi}{\RR_i}
+\newcommand{\RRr}{\RR_r}
+\newcommand{\SSi}{\SS_i}
+\newcommand{\SSt}{\SS_t}
+\newcommand{\VVj}{\VV_{\!j}} % \! must be *inside* the subscript, not outside
+\newcommand{\VVk}{\VV_{\!k}} % \! must be *inside* the subscript, not outside
+\newcommand{\TTij}{\TT_{ij}}
+\newcommand{\TTrj}{T_{r,j}}
+\newcommand{\TTik}{\TT_{ik}}
+\newcommand{\iT}{^{\scriptscriptstyle -\top}} % inverse transpose
+\newcommand{\tr}{\mathrm{tr}}                 % trace
+\newcommand{\alphaj}{\alpha_j}
+\newcommand{\alphak}{\alpha_k}
+\newcommand{\qij}{q_{ij}}
+\newcommand{\pij}{p_{ij}}
+\newcommand{\pik}{p_{ik}}
+\newcommand{\qqj}{q_j}
+\newcommand{\norm}{|\!|}
+\newcommand{\MLE}{MLE}
+\newcommand{\EPhi}{\langle\Phi\rangle}
+\newcommand{\alphagauss}{\ensuremath{\alpha}}
+\newcommand{\ngauss}{\ensuremath{j}}
+
+\newcommand{\pmrastar}{\ensuremath{\mu_{\ra *}}}
+\newcommand{\order}[1]{\ensuremath{\mathcal{O}(#1)}}
+\newcommand{\vx}{\ensuremath{v_x}}
+\newcommand{\vy}{\ensuremath{v_y}}
+\newcommand{\vz}{\ensuremath{v_z}}
+\newcommand{\EM}{EM}
+\newcommand{\unitmatrix}{\ensuremath{\ten{I}}}
+
+\newcommand{\AIC}{AIC}
+\newcommand{\MDL}{MDL}
+\newcommand{\MML}{MML}
+\newcommand{\nparam}{\ensuremath{N_{\mbox{{\footnotesize param}}}}}
+\newcommand{\totalnparam}{\ensuremath{N_{\mbox{{\footnotesize param,tot}}}}}
+
