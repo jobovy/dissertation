@@ -28,7 +28,7 @@ all: diss.pdf abstractpage.pdf
 .PHONY: clean spotless
 
 clean:
-	$(RM) *.dvi *.aux *.log
+	$(RM) *.dvi *.aux *.log *.lof *.toc *.lot
 
 spotless:
 	$(RM) diss.pdf abstractpage.pdf
