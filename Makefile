@@ -1,3 +1,4 @@
+RM=/bin/rm -vf
 
 all: diss.pdf abstractpage.pdf
 
@@ -11,6 +12,7 @@ all: diss.pdf abstractpage.pdf
 	latex $<
 	- bash -c " ( grep Rerun $*.log && latex $< ) || echo noRerun "
 	- bash -c " ( grep Rerun $*.log && latex $< ) || echo noRerun "
+	- bash -c " ( grep Rerun $*.log && latex $< ) || echo noRerun "
 
 %.eps: %.ps
 	cp $< $(@)_tmp
@@ -21,4 +23,12 @@ all: diss.pdf abstractpage.pdf
 	cp $(@)_tmp $< 
 	rm $(@)_edcmd $(@)_tmp
 
-%.dvi: %.tex
+#%.dvi: %.tex
+
+.PHONY: clean spotless
+
+clean:
+	$(RM) *.dvi *.aux *.log
+
+spotless:
+	$(RM) diss.pdf abstractpage.pdf

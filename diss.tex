@@ -8,13 +8,13 @@
 
 %% Replace the title, name, advisor name, graduation date and dedication below with
 %% your own. Graduation months must be January, May or September.
-\newcommand{\thesistitle}{Proof of the Riemann Hypothesis}
-\newcommand{\thesisauthor}{Jane Doe}
-\newcommand{\thesisadvisor}{Professor Fulana de Tal}
-\newcommand{\graddate}{May 2032}
+\newcommand{\thesistitle}{TITLE}
+\newcommand{\thesisauthor}{Jo~Bovy}
+\newcommand{\thesisadvisor}{Professor David~W.~Hogg}
+\newcommand{\graddate}{May 2011}
 %% If you do not want a dedication, scroll down and comment out
 %% the appropriate lines in this file.
-\newcommand{\thesisdedication}{To my dog Weierstra\ss, with affection.}
+%\newcommand{\thesisdedication}{To my dog Weierstra\ss, with affection.}
 
 %% The following makes chapters and sections, but not subsections,
 %% appear in the TOC (table of contents). Increase to 2 or 3 to
@@ -37,7 +37,7 @@
 
 %% Use the following commands, if desired, during production.
 %% Comment them out for final version.
-%\usepackage{layout} % defines the \layout command, see below
+\usepackage{layout} % defines the \layout command, see below
 %\setlength{\hoffset}{-.75in} % creates a large right margin for notes and \showlabels
 
 %% Controls spacing between lines (\doublespacing, \onehalfspacing, etc.):
@@ -46,7 +46,7 @@
 %% Use the line below for official NYU version, which requires
 %% double line spacing. For all other uses, this is unnecessary,
 %% so the line can be commented out.
-\doublespacing % requires package setspace, invoked above
+%\doublespacing % requires package setspace, invoked above
 
 %% Each of the following lines defines the \com command, which produces
 %% a comment (notes for yourself, for instance) in the output file.
@@ -69,7 +69,7 @@
 \begin{document}
 %% Produces a test "layout" page, for "debugging" purposes only.
 %% Comment out for final version.
-%\layout % requires package layout (see above, on this same file)
+\layout % requires package layout (see above, on this same file)
 
 %%%%%% Title page %%%%%%%%%%%
 %% Sets page numbering to "roman style" i, ii, iii, iv, etc:
@@ -92,7 +92,7 @@
   A dissertation submitted in partial fulfillment\\
   of the requirements for the degree of\\
   Doctor of Philosophy\\
-  Department of Mathematics\\
+  Department of Physics\\
   New York University\\
   \graddate
 \end{doublespace}
@@ -110,12 +110,12 @@
 %%%%%%%%%%%%%% Dedication %%%%%%%%%%%%%%%%%
 %% Comment out the following lines if you do not want to dedicate
 %% this to anyone...
-\vspace*{\fill}
-\begin{center}
-  \thesisdedication\addcontentsline{toc}{section}{Dedication}
-\end{center}
-\vfill
-\newpage
+%\vspace*{\fill}
+%\begin{center}
+%  \thesisdedication\addcontentsline{toc}{section}{Dedication}
+%\end{center}
+%\vfill
+%\newpage
 %%%%%%%%%%%%%% Acknowledgements %%%%%%%%%%%%
 %% Comment out the following lines if you do not want to acknowledge
 %% anyone's help...
@@ -151,7 +151,7 @@
 \input{intro}
 %% If your thesis has different "Parts", use commands such as the following:
 %\part{First Part\label{part:one}}%
-\input{chap1}
+%\input{chap1}
 %\input{chap2} % further chapters -- change file names to meaningful things...
 %\input{chap3}
 %\part{Second Part\label{part:two}}%
@@ -160,8 +160,8 @@
 %\input{chap6}
 %%%%% Appendices start %%%%%%%%%%%%%%%%
 %% Comment out the following line if your thesis has no appendix
-\appendix
-\input{app1}
+%\appendix
+%\input{app1}
 %% Note: If your thesis has more than one appendix, NYU requires a "list of
 %% appendices" page before the body of the thesis. I don't provide the tools
 %% to create that here, so you're on your own for that one... Sorry.
