@@ -9,7 +9,7 @@ all: diss.pdf abstractpage.pdf
 	dvips -t letter $< -o
 
 diss.dvi: diss.tex intro.tex solarsystem.tex biblio.tex abstract.tex \
-	definitions.tex masers.tex hercules.tex veldist.tex
+	definitions.tex masers.tex hercules.tex veldist.tex groups.tex
 	latex $<
 	- bash -c " ( grep undefined $*.log && latex $< ) || echo noRerun "
 	- bash -c " ( grep undefined $*.log && latex $< ) || echo noRerun "
