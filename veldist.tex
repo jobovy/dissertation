@@ -530,9 +530,12 @@ where $k =  4.74047$, [\vrr] = km s$^{-1}$, [\parallax] = \arcsecs,
 [\pmra]=[\pmdec]= \arcsecs\ yr$^{-1}$, and the matrices $\TT$ and $\AAA$
 are given by
 \begin{equation}\label{eq:radectolbT}
-\TT = \matrixleft \begin{array}{ccc} \cos \theta & \sin \theta & 0\\\sin \theta & -\cos \theta & 0\\0&0&1 \end{array} \matrixright
-\matrixleft \begin{array}{ccc} -\sin \decngp & 0 & \cos \decngp\\ 0 & 1 & 0 \\ \cos \decngp & 0 & \sin \decngp\end{array} \matrixright
+\begin{split}
+\TT = &  \matrixleft \begin{array}{ccc} \cos \theta & \sin \theta & 0\\\sin \theta & -\cos \theta & 0\\0&0&1 \end{array} \matrixright
+\matrixleft \begin{array}{ccc} -\sin \decngp & 0 & \cos \decngp\\ 0 & 1 & 0 \\ \cos \decngp & 0 & \sin \decngp\end{array} \matrixright\\
+& \times
 \matrixleft \begin{array}{ccc} \cos \rangp &\sin\rangp&0\\ -\sin\rangp & \cos\rangp&0\\ 0&0&1\end{array} \matrixright\, ,
+\end{split}
 \end{equation}
 and
 \begin{equation}
@@ -967,10 +970,10 @@ case of Gaussian mixtures \citep{wallace87a,oliver94a,Oliver96a}
 \begin{equation}\label{eq:mml}
 \begin{split}
 \mathrm{\MML}(K,w) = & K \log\left(2\,\det \VV_{\mbox{{\footnotesize pop}}}\right)
--\log(K-1)! +\frac{\totalnparam}{2}\log\kappa(\totalnparam) - \log K!\\
-& + \sum_{i=1}^{d}\sum_{j=1}^K \log \frac{\sqrt{2}\,\alpha_j\,N}{\lambda_{j,i}}+
-\frac{1}{2}\log N -
-\frac{1}{2}\sum_{j=1}^K \log \alpha_j -
+-\log(K-1)! +\frac{\totalnparam}{2}\log\kappa(\totalnparam)\\
+& - \log K! + \sum_{i=1}^{d}\sum_{j=1}^K \log \frac{\sqrt{2}\,\alpha_j\,N}{\lambda_{j,i}}+
+\frac{1}{2}\log N \\
+& -\frac{1}{2}\sum_{j=1}^K \log \alpha_j -
 \phi(K,w) +\frac{\totalnparam}{2}\, .
 \end{split}
 \end{equation}
@@ -1046,10 +1049,9 @@ evidence can be approximated as
 \log p(\mbox{\Hipparcos\ data}|\{K,w\}) = &
 \phi(K,w) - K\, \log\left(2\,\det \VV_{\mbox{{\footnotesize pop}}}\right)
 +\log \left(K-1\right)!\\ & +\frac{\totalnparam}{2}\log (2\pi)
--\frac{1}{2} \left(\sum_{j=1}^{K-1} \log\sum_{i=1}^N 
-\left(\frac{\qij}{\alpha_j}-\frac{q_{iK}}{\alpha_K}\right)^2\right. \\
-&\left.+2\, d\sum_{j=1}^K\log \left(\sqrt{2} \alpha_j N\right)
--2 \sum_{j=1}^K \sum_{i=1}^d \log \lambda_{j,i}\right)
+\\
+& -\frac{1}{2} \left(\sum_{j=1}^{K-1} \log\sum_{i=1}^N 
+\left(\frac{\qij}{\alpha_j}-\frac{q_{iK}}{\alpha_K}\right)^2 \right. \\& \left.+2\, d\sum_{j=1}^K\log \left(\sqrt{2} \alpha_j N\right) -2 \sum_{j=1}^K \sum_{i=1}^d \log \lambda_{j,i}\right)
 \end{split}
 \end{equation}
 in the case of a Gaussian mixture \citep{roberts98a}. The $\qij$ are
