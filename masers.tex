@@ -208,9 +208,12 @@ $p(\vx,\vv|\vxi^{\mathrm{obs}},\vvi^{\mathrm{obs}})$ has been
 included. The posterior distribution for the 14 model parameters is
 then given by
 \begin{equation}\label{eq:posterior}
+\begin{split}
 p(\pmsgra,R_0,\vsunlsr,\masermean,\maserdisp|\{\vxi^{\mathrm{obs}},\vvi^{\mathrm{obs}}\})
-\propto p(\pmsgra,R_0,\vsunlsr)\,\prod_i
+\propto & \ p(\pmsgra,R_0,\vsunlsr)\\
+& \times \prod_i
 p(\vxi^{\mathrm{obs}},\vvi^{\mathrm{obs}}|\pmsgra,R_0,\vsunlsr,\masermean,\maserdisp)\,,
+\end{split}
 \end{equation}
 where the first factor on the right-hand side is the prior probability
 distribution for these parameters and the product is the
