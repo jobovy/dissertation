@@ -1888,6 +1888,7 @@ velocity distribution found here to that found by other methods.
 \tablecaption{Low entropy predictions for Hipparcos stars' radial velocities\label{table:hip_low}}
 \tablecolumns{11}
 \tablewidth{0pt}
+\rotate
 \tabletypesize{\small}
 \tablehead{\colhead{ID\tablenotemark{\protect{\ref{HIPNUMBERtwo}}}} & \multicolumn{3}{c}{\ra\ (1991.25)}& \multicolumn{3}{c}{\dec\ (1991.25)}{} &\colhead{$v_r$\tablenotemark{\protect{\ref{VRtwo}}}}&\colhead{$v_r > (95\%)$\tablenotemark{\protect{\ref{VRLOWERtwo}}}}& \colhead{$v_r < (95\%)$\tablenotemark{\protect{\ref{VRUPPERtwo}}}} & \colhead{\phantom{bbb}$H$\tablenotemark{\protect{\ref{ENTROPYtwo}}}\phantom{bbb}}\\
 \colhead{} & \colhead{(h} & \colhead{m} & \colhead{s)} & \colhead{($\degree$} & \colhead{$\prime$} & \colhead{$\prime\prime$)} & \colhead{(km s$^{-1}$)} & \colhead{(km s$^{-1}$)} & \colhead{(km s$^{-1}$)} & \colhead{}}
@@ -1941,6 +1942,7 @@ Entropy of the probability distribution of the radial velocity.\stepcounter{tabl
 \tablecaption{High entropy predictions for Hipparcos stars' radial velocities\label{table:hip_high}}
 \tablecolumns{11}
 \tablewidth{0pt}
+\rotate
 \tabletypesize{\small}
 \tablehead{\colhead{ID\tablenotemark{\protect{\ref{HIPNUMBERone}}}} & \multicolumn{3}{c}{\ra\ (1991.25)}& \multicolumn{3}{c}{\dec\ (1991.25)}{} &\colhead{$v_r$\tablenotemark{\protect{\ref{VRone}}}}&\colhead{$v_r > (95\%)$\tablenotemark{\protect{\ref{VRLOWERone}}}}& \colhead{$v_r < (95\%)$\tablenotemark{\protect{\ref{VRUPPERone}}}} & \colhead{\phantom{bbb}$H$\tablenotemark{\protect{\ref{ENTROPYone}}}\phantom{bbb}}\\
 \colhead{} & \colhead{(h} & \colhead{m} & \colhead{s)} & \colhead{($\degree$} & \colhead{$\prime$} & \colhead{$\prime\prime$)} & \colhead{(km s$^{-1}$)} & \colhead{(km s$^{-1}$)} & \colhead{(km s$^{-1}$)} & \colhead{}}
@@ -2007,7 +2009,7 @@ Entropy of the probability distribution of the radial velocity.\stepcounter{tabl
 
 \clearpage
 \begin{figure}
-\includegraphics{figs_veldist/veldensXZ.ps}
+\includegraphics[width=1.17\textwidth]{figs_veldist/veldensXZ.ps}
 \caption[Same as Fig.~\ref{fig:veldensXY}, but projected onto the $v_x-v_z$ plane]{Same as Fig.~\ref{fig:veldensXY}, but projected onto the $v_x-v_z$ plane.}%
 \label{fig:veldensXZ}
 \end{figure}
@@ -2030,7 +2032,7 @@ Entropy of the probability distribution of the radial velocity.\stepcounter{tabl
 
 
 \clearpage
-\includegraphics{figs_veldist/predict_gcs_rand.ps}
+\includegraphics[width=\textwidth]{figs_veldist/predict_gcs_rand.ps}
 \clearpage
 \begin{figure}
 \caption[Predicted radial velocity distribution using the reconstructed velocity distribution with $k$ = 10, $w$ = 4 km$^2$ s$^{-1}$ for random stars in the \gcsabb\ catalogue]{Predicted radial velocity distribution using the reconstructed velocity distribution with $k$ = 10, $w$ = 4 km$^2$ s$^{-1}$ for random stars in the \gcsabb\ catalogue. The gray curve gives the radial velocity distribution obtained by marginalizing the three-dimensional velocity distribution over the tangential velocity (see \eqnnumber~[\ref{eq:margpredicted}]), while the black curve shows the radial velocity distribution obtained by conditioning the reconstructed velocity distribution on the tangential velocity of the star as measured by \Hipparcos (see \eqnnumber~[\ref{eq:condpredicted}]). The black vertical line gives the measured value of the radial velocity from the \gcsabb\ catalogue. The gray vertical lines give the 95-percent confidence interval limits for the conditional distribution. The entropies $H_1$ and $H_2$ of the conditional, respectively marginalized distribution are given in the upper-right corner. The \Hipparcos\ number of the star is given in the upper-left corner.}%
@@ -2067,14 +2069,14 @@ Entropy of the probability distribution of the radial velocity.\stepcounter{tabl
 
 \clearpage
 \begin{figure}
-\includegraphics{figs_veldist/predict_gcs_good.ps}
+\includegraphics[width=1.08\textwidth]{figs_veldist/predict_gcs_good.ps}
 \caption[The six ``best'', \ie, highest likelihood, predictions of the radial velocity of stars in the \gcsabb\ catalogue based on our reconstruction of the velocity distribution]{The six ``best'', \ie, highest likelihood, predictions of the radial velocity of stars in the \gcsabb\ catalogue based on our reconstruction of the velocity distribution with $K$ = 10 and $w$= 4 km$^2$ s$^{-2}$.}%
 \label{fig:predict_gcs_good}
 \end{figure}
 
 \clearpage
 \begin{figure}
-\includegraphics{figs_veldist/predict_gcs_bad.ps}
+\includegraphics[width=1.08\textwidth]{figs_veldist/predict_gcs_bad.ps}
 \caption[Same as Fig.~\ref{fig:predict_gcs_good}, but the six ``worst'', \ie, lowest likelihood, predictions]{Same as Fig.~\ref{fig:predict_gcs_good}, but the six ``worst'', \ie, lowest likelihood, predictions.}%
 \label{fig:predict_gcs_bad}
 \end{figure}
@@ -2088,14 +2090,14 @@ Entropy of the probability distribution of the radial velocity.\stepcounter{tabl
 
 \clearpage
 \begin{figure}
-\includegraphics{figs_veldist/predict_gcs_low.ps}
+\includegraphics[width=1.08\textwidth]{figs_veldist/predict_gcs_low.ps}
 \caption[The six ``tightest'', \ie, lowest entropy, predictions of the radial velocity of stars in the \gcsabb\ catalogue based on our reconstruction of the velocity distribution]{The six ``tightest'', \ie, lowest entropy, predictions of the radial velocity of stars in the \gcsabb\ catalogue based on our reconstruction of the velocity distribution with $K$ = 10 and $w$= 4 km$^2$ s$^{-2}$.}%
 \label{fig:predict_gcs_low}
 \end{figure}
 
 \clearpage
 \begin{figure}
-\includegraphics{figs_veldist/predict_gcs_high.ps}
+\includegraphics[width=1.08\textwidth]{figs_veldist/predict_gcs_high.ps}
 \caption[Same as Fig.~\ref{fig:predict_gcs_low}, but the six ``widest'', \ie, highest entropy, predictions]{Same as Fig.~\ref{fig:predict_gcs_low}, but the six ``widest'', \ie, highest entropy, predictions.}%
 \label{fig:predict_gcs_high}
 \end{figure}
@@ -2120,14 +2122,14 @@ Entropy of the probability distribution of the radial velocity.\stepcounter{tabl
 
 \clearpage
 \begin{figure}
-\includegraphics{figs_veldist/info_hip_low.ps}
+\includegraphics[width=1.08\textwidth]{figs_veldist/info_hip_low.ps}
 \caption[The six ``tightest'', \ie, lowest entropy, predictions of the radial velocity of stars in the sample we extracted from the \Hipparcos\ catalogue that do not have an entry in the \gcsabb\ catalogue based on our reconstruction of the velocity distribution]{The six ``tightest'', \ie, lowest entropy, predictions of the radial velocity of stars in the sample we extracted from the \Hipparcos\ catalogue that do not have an entry in the \gcsabb\ catalogue based on our reconstruction of the velocity distribution with $K$ = 10 and $w$= 4 km$^2$ s$^{-2}$.}%
 \label{fig:info_hip_low}
 \end{figure}
 
 \clearpage
 \begin{figure}
-\includegraphics{figs_veldist/info_hip_high.ps}
+\includegraphics[width=1.08\textwidth]{figs_veldist/info_hip_high.ps}
 \caption[Same as Fig.~\ref{fig:info_hip_low}, but the six ``widest'', \ie, highest entropy, predictions]{Same as Fig.~\ref{fig:info_hip_low}, but the six ``widest'', \ie, highest entropy, predictions.}%
 \label{fig:info_hip_high}
 \end{figure}
