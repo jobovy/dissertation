@@ -414,7 +414,7 @@ deviation is kept as a free parameter).
 
 In this paper we use a technique which combines all of the good points
 of the techniques described above to reconstruct the velocity
-distribution. In \sectionname\ \ref{sec:model} we describe our model
+distribution. In \sectionname\ \ref{sec:modelveldist} we describe our model
 of the underlying distribution function, which consists of a mixture
 of three-dimensional Gaussian distributions, which are left completely
 free. We keep the number of Gaussian components as a free parameter
@@ -460,7 +460,7 @@ further in paper II in this series.
 
 
 
-\section{Data, model, and algorithm}\label{sec:model}
+\section{Data, model, and algorithm}\label{sec:modelveldist}
 
 Throughout we use the standard Galactic velocity coordinate system,
 with the directions $x$, $y$, and $z$ (and associated unit vectors
@@ -1036,7 +1036,7 @@ Finally, we also use the actual Bayesian model selection criterion,
 known as the \emph{evidence}. The evidence is defined as the
 denominator in the application of Bayes's theorem to parameter
 estimation, which in this case given by
-\begin{equation}\label{eq:bayes}
+\begin{equation}\label{eq:bayesveldist}
 p(\theta | \mbox{\Hipparcos\ data}, \{K, w\}) = 
 \frac{p(\mbox{\Hipparcos\ data} | \theta)\,
 p(\theta|\{K,w\})}{p(\mbox{\Hipparcos\ data}|\{K,w\})}\, ,
@@ -1473,7 +1473,7 @@ leave-one-out subsamples to differ from the global best fit model in
 the amplitudes of the Gaussian components of the mixture. Similarly,
 the expression in \eqnnumber~(\ref{eq:mml}) for the message length
 used in the minimum message length model selection criterion as well
-as the form given in \eqnnumber~(\ref{eq:bayes}) for the Bayesian
+as the form given in \eqnnumber~(\ref{eq:bayesveldist}) for the Bayesian
 evidence are only approximations to the true message length and the
 true Bayesian evidence, respectively, for the Gaussian mixture model
 for a distribution function. In the case of the approximation to the
