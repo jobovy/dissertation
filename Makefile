@@ -12,11 +12,13 @@ diss.dvi: diss.tex intro.tex solarsystem.tex biblio.tex abstract.tex \
 	definitions.tex masers.tex hercules.tex veldist.tex groups.tex \
 	acknowledge.tex
 	latex $<
+	latex $<
 	- bash -c " ( grep undefined $*.log && latex $< ) || echo noRerun "
 	- bash -c " ( grep undefined $*.log && latex $< ) || echo noRerun "
 	- bash -c " ( grep undefined $*.log && latex $< ) || echo noRerun "
 
 abstractpage.dvi: abstractpage.tex abstract.tex
+	latex $<
 	latex $<
 	- bash -c " ( grep undefined $*.log && latex $< ) || echo noRerun "
 	- bash -c " ( grep undefined $*.log && latex $< ) || echo noRerun "
