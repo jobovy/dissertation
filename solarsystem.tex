@@ -895,7 +895,7 @@ goal.
 \clearpage
 \begin{deluxetable}{lr@{.}lr@{.}lr@{.}lr@{.}lr@{.}lr@{.}l}
 \rotate
-\tablecaption{Planet Ephemerides for 2009-Apr-01 00:00:00.0000 (CT\tablenotemark{\protect{\ref{CT}}})\label{table:eph}}
+\tablecaption{Planet Ephemerides for 2009-Apr-01 00:00:00.0000 (CT)\label{table:eph}}
 \tablecolumns{13}
 \tablewidth{0pt}
 \tablehead{\colhead{Planet} & \multicolumn{2}{c}{$x$} & \multicolumn{2}{c}{$y$} & \multicolumn{2}{c}{$z$} & \multicolumn{2}{c}{$v_x$} & \multicolumn{2}{c}{$v
@@ -918,9 +918,7 @@ Neptune & 24 & 323085642 & -17 & 606227355 & -0 & 197974999 & 0 & 664855006 & 0 
 \newcommand{\@currentlabel}{\thetableone}
 \makeatother
 \renewcommand{\thetableone}{\alph{tableone}}
-\tablenotetext{\thetableone}{\label{CT}
-CT is a coordinate time used in connection with ephemeris. It differs from UTC by about 66 seconds (see \url{http://ssd.jpl.nasa.gov/?horizons_doc\#timesys}).\stepcounter{tableone}}
-\tablecomments{The $xyz$-coordinate system is defined as follows: the
+\tablecomments{CT is a coordinate time used in connection with ephemeris. It differs from UTC by about 66 seconds (see \url{http://ssd.jpl.nasa.gov/?horizons_doc\#timesys}); The $xyz$-coordinate system is defined as follows: the
   $xy$-plane is given by the plane of the Earth's orbit at J2000.0,
   the $x$-axis is out along the ascending node of the instantaneous
   plane of the Earth's orbit and the Earth's mean equator at J2000.0,
