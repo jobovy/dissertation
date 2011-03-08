@@ -13,15 +13,15 @@ orbital times), and if the system is observed at any non-special time,
 it is possible to infer the dynamical properties of the system (such
 as the gravitational force or acceleration law) from a snapshot of the
 positions and velocities of the tracer population at a single moment
-in time. In this paper we describe a general inference technique that
-solves this problem while allowing (1)~the unknown distribution
-function of the tracer population to be simultaneously inferred and
-marginalized over, and (2)~prior information about the gravitational
-field and distribution function to be taken into account. As an
-example, we consider the simplest problem of this kind: We infer the
-force law in the Solar System using only an instantaneous kinematic
-snapshot (valid at 2009 April 1.0) for the eight major planets. We
-consider purely radial acceleration laws of the form $a_r=
+in time. In this \chaptername\ we describe a general inference
+technique that solves this problem while allowing (1)~the unknown
+distribution function of the tracer population to be simultaneously
+inferred and marginalized over, and (2)~prior information about the
+gravitational field and distribution function to be taken into
+account. As an example, we consider the simplest problem of this kind:
+We infer the force law in the Solar System using only an instantaneous
+kinematic snapshot (valid at 2009 April 1.0) for the eight major
+planets. We consider purely radial acceleration laws of the form $a_r=
 -A\,[r/r_0]^{-\alpha}$, where $r$ is the distance from the Sun.  Using
 a probabilistic inference technique, we infer $1.989<\alpha<2.052$
 (95~percent interval), largely independent of any assumptions about
@@ -102,7 +102,7 @@ initial conditions for a Solar System integration \citep{Giorgini96a}.
 These initial conditions were determined not by a single measurement
 at a single epoch, but are in fact the result of an optimization of a
 Solar System integration to observed planetary positions over many
-decades.  In the context of this paper---a demonstration of a
+decades.  In the context of this \chaptername---a demonstration of a
 method---it is best to think of these ``data'' as ``simulated data''
 useful for testing the method.  They just happen to be data that have
 been simulated by the analog computer we know as the Solar System.
@@ -273,9 +273,9 @@ fact that all eight lines cross near a single point in the space is
 encouraging that the system is virialized (as we expect) and that the
 inference will work. That the eight lines so nearly intersect in a
 single point is because, in fact, many of the planets are on circular
-orbits; the probabilistic method developed in this paper does not
-assume this, but it does retain the precision that is possible because
-of this situation.
+orbits; the probabilistic method developed in this \chaptername\ does
+not assume this, but it does retain the precision that is possible
+because of this situation.
 
 Also shown in \figurenames~\ref{fig:virial_main} and
 \ref{fig:virial_zoom} is the region of parameter space in which one or
@@ -635,13 +635,13 @@ to infer its shape from point observations.
 
 We attempted to construct a sensible prior over distributions using
 histograms with many bins by coupling the heights of the bins so that
-the densities appear smooth. Since the focus on this paper is on the
-principles of dynamical inference and not on the specific result on
-the Solar System's force law, we only provide a brief description of
-how we implemented this approach. We refer the interested reader to
-the references provided in the following for more details on the
-specifics. A multivariate Gaussian prior can be put over the log bin
-heights, approximating a logistic Gaussian process
+the densities appear smooth. Since the focus on this \chaptername\ is
+on the principles of dynamical inference and not on the specific
+result on the Solar System's force law, we only provide a brief
+description of how we implemented this approach. We refer the
+interested reader to the references provided in the following for more
+details on the specifics. A multivariate Gaussian prior can be put
+over the log bin heights, approximating a logistic Gaussian process
 \citep{leonard1978}. We used 100 equal-width bins coupled with a
 Gaussian covariance function \citep{rasmussen2005a}. We put uniform
 priors over the start and end points of the histogram and over
@@ -821,28 +821,28 @@ and biased distribution over~$\alpha$.
 \subsection{Future work}
 
 The necessity of a proper probabilistic approach as laid out in this
-paper has been recognized before in the context of inferring the mass
+\chaptername\ has been recognized before in the context of inferring the mass
 of the Galaxy from a small set of highly informative tracers: distant
 satellite galaxies \citep{Little87a} and high velocity stars
 \citep{Leonard90a}. The limitations of those works is that they choose
 restrictive forms of the distribution function in which the
 distribution of angular momentum is fixed as either radial or
-isotropic, or given as an inflexible parametric function in
-between these two extrema \citep{Kochanek96a}. The precision of their
-results for the fundamental parameters of the Galaxy are limited by
-the systematic uncertainty arising from this assumption. In the case
-of estimating the local escape velocity from a sample of high velocity
+isotropic, or given as an inflexible parametric function in between
+these two extrema \citep{Kochanek96a}. The precision of their results
+for the fundamental parameters of the Galaxy are limited by the
+systematic uncertainty arising from this assumption. In the case of
+estimating the local escape velocity from a sample of high velocity
 stars, a power law model for the energy part of the distribution
 function was used; some progress has been made marginalizing over the
 exponent, a nuisance parameter, with a prior coming from cosmological
 simulations \citep{Smith07a}. In the future, using the technique
-introduced in this paper there is no need to make strong assumptions
-about the degree of anisotropy of the system at hand or the form of
-the distribution function beyond the assumption of complete
-angle-mixing. The results of this paper show that by introducing
-flexible models for the distribution function that can learn from the
-data, robust contraints on the parameters of a dynamical system can be
-obtained.
+introduced in this \chaptername\ there is no need to make strong
+assumptions about the degree of anisotropy of the system at hand or
+the form of the distribution function beyond the assumption of
+complete angle-mixing. The results of this \chaptername\ show that by
+introducing flexible models for the distribution function that can
+learn from the data, robust contraints on the parameters of a
+dynamical system can be obtained.
 
 The approach developed here can be applied to other (perhaps more
 pressing) dynamical inference problems in which test particles can be
@@ -863,13 +863,13 @@ has been shown before in the case of the Galactic Center; the
 assumption that a set of stars at the Galactic Center is part of a
 disk-like population has been successful in reconstructing missing
 data \citep{Beloborodov06a}. Extension of the approach developed in
-this paper will permit incorporation of much more of the available
-data on the dynamics in the central region of the Galaxy.  This, in
-turn, will lead to a better determination of the mass of the black
-hole and the surrounding density profile.
+this \chaptername\ will permit incorporation of much more of the
+available data on the dynamics in the central region of the Galaxy.
+This, in turn, will lead to a better determination of the mass of the
+black hole and the surrounding density profile.
 
-On larger scales, approaches like that developed in this paper will
-prove to be essential for the analysis of the large data sets of
+On larger scales, approaches like that developed in this \chaptername\
+will prove to be essential for the analysis of the large data sets of
 upcoming surveys such as \Gaia. As the duration of the \Gaia\ mission
 is vanishingly smaller than any dynamical timescale, the problem posed
 is essentially the same as the problem posed here: Infer the dynamics
@@ -889,8 +889,8 @@ well-mixed, such that mixed-angles approaches are expected to lead to
 valuable inferences. Combining the mixed-angle and
 unmixed-substructure techniques into a general inference about the
 dynamics of the Galaxy requires a fully probabilistic method and the
-approach developed in this paper is a baby step towards this ambitious
-goal.
+approach developed in this \chaptername\ is a baby step towards this
+ambitious goal.
 
 
 \clearpage
