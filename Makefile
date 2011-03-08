@@ -2,6 +2,9 @@ RM=/bin/rm -vf
 
 all: diss.pdf abstractpage.pdf
 
+html:
+	latex2html diss.tex -split 0
+
 %.pdf: %.ps
 	ps2pdf -dMaxSubsetPct=100 -dCompatibilityLevel=1.2 -dSubsetFonts=true -dEmbedAllFonts=true $<
 
