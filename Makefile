@@ -13,7 +13,7 @@ html:
 
 diss.dvi: diss.tex intro.tex solarsystem.tex biblio.tex abstract.tex \
 	definitions.tex masers.tex hercules.tex veldist.tex groups.tex \
-	acknowledge.tex
+	acknowledge.tex conclusion.tex
 	latex $<
 	latex $<
 	- bash -c " ( grep undefined $*.log && latex $< ) || echo noRerun "
