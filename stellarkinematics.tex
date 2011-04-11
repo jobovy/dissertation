@@ -85,8 +85,8 @@ pole. These quantities were defined for the epoch 1950.0 as follows:
 \decngp &= 27\degree.4\, ,\\
 \theta &= 123\degree\, .
 \end{align}
-We also need some formulas from spherical trigonometry, which may or
-may not be derived in the following subsection.
+We also need some formulas from spherical trigonometry, which are
+given in the following subsection.
 
 \subsection{Some formulas from spherical trigonometry}
 
@@ -135,7 +135,10 @@ A simple application of the analogue formula (\ref{eq:analogue}) gives
 \end{equation}
 Substituting in (\ref{eq:triangleGPX}) this becomes
 \begin{equation}
-\sin(90\degree - \galb) \cos(\theta-\gall) = \cos(90\degree-\dec) \sin(90\degree-\decngp) - \sin(90\degree-\dec) \cos(90\degree-\decngp) \cos(\ra-\rangp)\, ,\\
+\begin{split}
+\sin(90\degree & - \galb) \cos(\theta-\gall)  = \\
+& \cos(90\degree-\dec) \sin(90\degree-\decngp) - \sin(90\degree-\dec) \cos(90\degree-\decngp) \cos(\ra-\rangp)\, ,
+\end{split}
 \end{equation}
 which becomes
 \begin{equation}\label{eq:radectolb1}
@@ -210,11 +213,13 @@ form as follows:
 \end{equation}
 The left hand sides of (\ref{eq:radectolb}) can be similarly be written first as:
 \begin{equation}\scriptstyle\label{eq:radectolbmatrix2}
-\matrixleft \begin{array}{c} \sin\dec \cos\decngp - \cos\dec \sin\decngp \cos(\ra-\rangp)\\ 
-\cos \dec \sin (\ra-\rangp)\\
-\sin \decngp \sin \dec + \cos\decngp \cos\dec \cos(\ra-\rangp) \end{array} \matrixright = 
+\begin{split}
+& \matrixleft \begin{array}{c} \sin\dec \cos\decngp - \cos\dec \sin\decngp \cos(\ra-\rangp)\\ 
+\cos \dec  \sin (\ra-\rangp)\\
+\sin \decngp \sin \dec + \cos\decngp \cos\dec \cos(\ra-\rangp) \end{array} \matrixright = \\& \qquad \qquad \qquad \qquad 
 \matrixleft \begin{array}{ccc} -\sin \decngp & 0 & \cos \decngp\\ 0 & 1 & 0 \\ \cos \decngp & 0 & \sin \decngp\end{array} \matrixright 
 \matrixleft \begin{array}{c} \cos \dec \cos(\ra - \rangp)\\\cos \dec \sin(\ra-\rangp)\\\sin\dec \end{array} \matrixright\, .
+\end{split}
 \end{equation}
 The final vector in the previous equation can itself be written as
 \begin{equation}\label{eq:radectolbmatrix3}
@@ -228,15 +233,18 @@ Combining (\ref{eq:radectolbmatrix1}), (\ref{eq:radectolbmatrix2}), and (\ref{eq
 \matrixleft \begin{array}{ccc} \cos \theta & \sin \theta & 0\\\sin \theta & -\cos \theta & 0\\0&0&1 \end{array} \matrixright
 \matrixleft \begin{array}{c} \cos \galb \cos \gall \\ \cos \galb \sin \gall \\ \sin \galb \end{array} \matrixright & = 
 \matrixleft \begin{array}{ccc} -\sin \decngp & 0 & \cos \decngp\\ 0 & 1 & 0 \\ \cos \decngp & 0 & \sin \decngp\end{array} \matrixright \\
-& \times \matrixleft \begin{array}{ccc} \cos \rangp &\sin\rangp&0\\ -\sin\rangp & \cos\rangp&0\\ 0&0&1\end{array} \matrixright
+& \times \matrixleft \begin{array}{ccc} \cos \rangp &\sin\rangp&0\\ -\sin\rangp & \cos\rangp&0\\ 0&0&1\end{array} \matrixright \\
+& \times
 \matrixleft \begin{array}{c} \cos \dec \cos \ra \\ \cos \dec \sin \ra \\ \sin \dec \end{array} \matrixright\, ,
 \end{split}
 \end{equation}
 which means that we can write the matrix $\TT$ in (\ref{eq:radectolbmatrix}) as
 \begin{equation}\label{eq:radectolbT}
-\TT = \matrixleft \begin{array}{ccc} \cos \theta & \sin \theta & 0\\\sin \theta & -\cos \theta & 0\\0&0&1 \end{array} \matrixright
-\matrixleft \begin{array}{ccc} -\sin \decngp & 0 & \cos \decngp\\ 0 & 1 & 0 \\ \cos \decngp & 0 & \sin \decngp\end{array} \matrixright
-\matrixleft \begin{array}{ccc} \cos \rangp &\sin\rangp&0\\ -\sin\rangp & \cos\rangp&0\\ 0&0&1\end{array} \matrixright\, ,
+\begin{split}
+\TT = & \matrixleft \begin{array}{ccc} \cos \theta & \sin \theta & 0\\\sin \theta & -\cos \theta & 0\\0&0&1 \end{array} \matrixright
+\matrixleft \begin{array}{ccc} -\sin \decngp & 0 & \cos \decngp\\ 0 & 1 & 0 \\ \cos \decngp & 0 & \sin \decngp\end{array} \matrixright \\
+& \qquad \qquad \times \matrixleft \begin{array}{ccc} \cos \rangp &\sin\rangp&0\\ -\sin\rangp & \cos\rangp&0\\ 0&0&1\end{array} \matrixright\, ,
+\end{split}
 \end{equation}
 which is slightly different from but agrees with the representation
 given by \citet{1987AJ.....93..864J}
@@ -454,24 +462,30 @@ which becomes
 \end{equation}
 This can be simplified by writing
 \begin{equation}\label{eq:simplifyddtradec2}
-\matrixleft  \begin{array}{c} 
+\begin{split}
+& \matrixleft  \begin{array}{c} 
 \cos \dec \cos \ra\, \dot{\radialdist} - \radialdist \sin \dec \cos \ra\, \dot{\dec} - \radialdist \cos \dec \sin \ra\, \dot{\ra}
 \\ \cos \dec \sin \ra\, \dot{\radialdist} - \radialdist \sin \dec \sin \ra\, \dot{\dec} + \radialdist \cos \dec \cos \ra\, \dot{\ra} 
-\\ \sin \dec\, \dot{\radialdist} + \radialdist \cos \dec\, \dot{\dec} \end{array} \matrixright= 
+\\ \sin \dec\, \dot{\radialdist}  + \radialdist \cos \dec\, \dot{\dec} \end{array} \matrixright= \\
+& \qquad \qquad \qquad \qquad 
 \matrixleft \begin{array}{ccc} \cos \ra & -\sin \ra & 0 \\ \sin \ra & \cos \ra & 0 \\ 0 & 0& 1 \end{array} \matrixright
 \matrixleft \begin{array}{c} \cos \dec \, \dot{\radialdist} - \radialdist \sin \dec \, \dot{\dec} \\
 \radialdist \cos \dec\, \dot{\ra}\\
 \sin\dec \, \dot{\radialdist} + \radialdist \cos\dec\, \dot{\dec} \end{array} \matrixright \, ,
+\end{split}
 \end{equation}
 which can be further simplified as
 \begin{equation}\scriptstyle\label{eq:simplifyddtradec3}
-\matrixleft  \begin{array}{c} 
-\cos \dec \cos \ra\, \dot{\radialdist} - \radialdist \sin \dec \cos \ra\, \dot{\dec} - \radialdist \cos \dec \sin \ra\, \dot{\ra}
+\begin{split}
+& \matrixleft  \begin{array}{c} 
+\cos \dec  \cos \ra\, \dot{\radialdist} - \radialdist \sin \dec \cos \ra\, \dot{\dec} - \radialdist \cos \dec \sin \ra\, \dot{\ra}
 \\ \cos \dec \sin \ra\, \dot{\radialdist} - \radialdist \sin \dec \sin \ra\, \dot{\dec} + \radialdist \cos \dec \cos \ra\, \dot{\ra} 
-\\ \sin \dec\, \dot{\radialdist} + \radialdist \cos \dec\, \dot{\dec} \end{array} \matrixright= 
+\\ \sin \dec\, \dot{\radialdist} + \radialdist \cos \dec\, \dot{\dec} \end{array} \matrixright= \\
+& \qquad \qquad \qquad 
 \matrixleft \begin{array}{ccc} \cos \ra & -\sin \ra & 0 \\ \sin \ra & \cos \ra & 0 \\ 0 & 0 & 1 \end{array} \matrixright
 \matrixleft \begin{array}{ccc} \cos \dec & 0 & \sin \dec\\ 0 & 1 & 0 \\ \sin \dec  & 0 & \cos\dec\end{array} \matrixright
 \matrixleft \begin{array}{c} \dot{\radialdist} \\ \radialdist\,\dot{\ra}\,\cos\dec\\\radialdist\dot{\dec}\end{array} \matrixright\, .
+\end{split}
 \end{equation}
 We define
 \begin{equation}
